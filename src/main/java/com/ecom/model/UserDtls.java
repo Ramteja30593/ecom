@@ -16,166 +16,165 @@ import lombok.Setter;
 @Entity
 public class UserDtls {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-	private String name;
+    private String name;
 
-	private String mobileNumber;
+    private String mobileNumber;
 
-	private String email;
+    private String email;
 
-	private String address;
+    private String address;
 
-	private String city;
+    private String city;
 
-	private String state;
+    private String state;
 
-	private String pincode;
+    private String pincode;
 
-	private String password;
+    private String password;
 
-	private String profileImage;
+    private String profileImage;
 
-	private String role;
+    private String role;
 
-	private Boolean isEnable;
+    private Boolean isEnable = true;  // Default value set to true
 
-	private Boolean accountNonLocked;
+    private Boolean accountNonLocked = true;  // Default value set to true
 
-	private Integer failedAttempt;
+    private Integer failedAttempt;
 
-	private Date lockTime;
-	
-	private String resetToken;
+    private Date lockTime;
 
-	public Integer getId() {
-		return id;
-	}
+    private String resetToken;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    public Integer getId() {
+        return id;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String getMobileNumber() {
-		return mobileNumber;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setMobileNumber(String mobileNumber) {
-		this.mobileNumber = mobileNumber;
-	}
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
 
-	public String getEmail() {
-		return email;
-	}
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public String getEmail() {
+        return email;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public String getState() {
-		return state;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	public void setState(String state) {
-		this.state = state;
-	}
+    public String getState() {
+        return state;
+    }
 
-	public String getPincode() {
-		return pincode;
-	}
+    public void setState(String state) {
+        this.state = state;
+    }
 
-	public void setPincode(String pincode) {
-		this.pincode = pincode;
-	}
+    public String getPincode() {
+        return pincode;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public void setPincode(String pincode) {
+        this.pincode = pincode;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public String getProfileImage() {
-		return profileImage;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	public void setProfileImage(String profileImage) {
-		this.profileImage = profileImage;
-	}
+    public String getProfileImage() {
+        return profileImage;
+    }
 
-	public String getRole() {
-		return role;
-	}
+    public void setProfileImage(String profileImage) {
+        this.profileImage = profileImage;
+    }
 
-	public void setRole(String role) {
-		this.role = role;
-	}
+    public String getRole() {
+        return role;
+    }
 
-	public Boolean getIsEnable() {
-		return isEnable;
-	}
+    public void setRole(String role) {
+        this.role = role;
+    }
 
-	public void setIsEnable(Boolean isEnable) {
-		this.isEnable = isEnable;
-	}
+    public Boolean getIsEnable() {
+        return isEnable;
+    }
 
-	public Boolean getAccountNonLocked() {
-		return accountNonLocked;
-	}
+    public void setIsEnable(Boolean isEnable) {
+        this.isEnable = isEnable;
+    }
 
-	public void setAccountNonLocked(Boolean accountNonLocked) {
-		this.accountNonLocked = accountNonLocked;
-	}
+    public Boolean getAccountNonLocked() {
+        return accountNonLocked;
+    }
 
-	public Integer getFailedAttempt() {
-		return failedAttempt;
-	}
+    public void setAccountNonLocked(Boolean accountNonLocked) {
+        this.accountNonLocked = accountNonLocked;
+    }
 
-	public void setFailedAttempt(Integer failedAttempt) {
-		this.failedAttempt = failedAttempt;
-	}
+    public Integer getFailedAttempt() {
+        return failedAttempt;
+    }
 
-	public Date getLockTime() {
-		return lockTime;
-	}
+    public void setFailedAttempt(Integer failedAttempt) {
+        this.failedAttempt = failedAttempt;
+    }
 
-	public void setLockTime(Date lockTime) {
-		this.lockTime = lockTime;
-	}
+    public Date getLockTime() {
+        return lockTime;
+    }
 
-	public String getResetToken() {
-		return resetToken;
-	}
+    public void setLockTime(Date lockTime) {
+        this.lockTime = lockTime;
+    }
 
-	public void setResetToken(String resetToken) {
-		this.resetToken = resetToken;
-	}
+    public String getResetToken() {
+        return resetToken;
+    }
 
+    public void setResetToken(String resetToken) {
+        this.resetToken = resetToken;
+    }
 }
