@@ -13,7 +13,7 @@ A full-stack e-commerce platform for online shopping, featuring a user-friendly 
 ## 🛠 Tech Stack
 - **Frontend:** JavaScript, HTML, CSS  
 - **Backend:** Spring Boot (Java)  
-- **Database:** SQL (MySQL/PostgreSQL)  
+- **Database:** SQL (MySQL)  
 - **Authentication:** JWT  
 
 ## 📂 Installation & Setup
@@ -23,23 +23,15 @@ A full-stack e-commerce platform for online shopping, featuring a user-friendly 
    ```sh
    cd frontend
 Install dependencies:
-
-sh
 npm install
 Run the frontend:
-
-sh
 npm start
 🔹 Backend Setup
 Navigate to the backend folder:
-
-sh
 cd backend
 Configure the application.properties file with database details.
 
 Build and run the Spring Boot application:
-
-sh
 mvn spring-boot:run
 🤝 Contributing
 Feel free to fork and contribute! Open an issue or submit a pull request.
@@ -49,5 +41,4 @@ This project is licensed under the MIT License.
 
 🔥 Happy Coding! 🔥
 
-vbnet
 Let me know if you need further modifications! 🚀
